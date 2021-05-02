@@ -1,0 +1,138 @@
+token: "tokenIci"
+clientId: "ClientIdIci"
+clientSecret: "ClientSecretIci"
+
+websiteURL: "http://website.bot"
+commandChar: "/"
+targetGuildId: "388033816574427146"
+logsChannel: "397083921139105792"
+announceChannel: "401892230480003104"
+notifLoterieRole: "401884208978722817"
+notifEventRole: "497853325102940201"
+moneyEmoji: "411635269901746216"
+gameChannel: "389702532781572097"
+reglement: ":radio_button: Règles de Base :radio_button:%n
+:black_small_square: L'usurpation d'identité, tout comme l'enregistrement audio, ou l'évitement d'une sanction sont passibles d'un **BANNISSEMENT DEFINITIF**.%n
+:black_small_square: Un pseudo est un nom virtuel il doit donc ne pas contenir d'insultes, de langage déplacé, il en est de même pour les images de profil ou le jeu que vous affichez manuellement.%n
+:black_small_square: La pub sauvage (que ce soit pour sa chaine, son discord, etc...)  n'est pas autorisée ici sans accord des modérateurs, que ce soit en vocal ou par écrit ou par MP.%n
+%n
+:radio_button: Règles par rapport aux discussions publiques :radio_button:%n
+:black_small_square: Pas de spam, de flood, d'insultes, ou de propos déplacés que ce soit dans le chat ou en vocal. Pas de publicité pour des logiciels pirates, des jeux crakés, etc.%n
+:black_small_square: Pour éviter de déranger les autres, les musiques , sons ou bots radio autres que ceux implantés sont interdits.%n
+:black_small_square: Pas de propagande politique ou religieuse.%n
+:black_small_square: Ne restez pas absent dans les canaux publics, allez dans le canal *Le coin des laissées*.%n
+:black_small_square: Avant de poster un message, n'oubliez pas de vérifier qu'il soit dans le bon canal.%n
+:black_small_square: Pas de mention DanField.%n
+%n
+:small_blue_diamond: L'équipe de modération se réserve le droit de modifier / supprimer chaque message, pseudo, ou toute autre chose qui ne correspondrait pas au réglement ou au bon sens.%n
+%n
+:small_blue_diamond: En cas de probleme, de réclamation, vous pouvez contacter par MP les moderateurs qui sont en ligne / invisibles / inactifs.%n
+%n
+:small_red_triangle: **EN CAS DE DOUTE, LES MODÉRATEURS ONT TOUJOURS RAISON**%n
+:small_red_triangle: **LAISSEZ LES MODÉRATEURS FAIRE LEUR TRAVAIL, NE MODÉREZ PAS À LEUR PLACE**%n
+:small_red_triangle: **CE RÉGLEMENT EST CONSIDÉRÉ COMME LU ET APPROUVÉ DÈS L'ARRIVÉE SUR LE SERVEUR**%n"
+bonusRole: "435106554359054336"
+roleTimeout: 20160
+keyTimeout: 14400
+roleCost: 3000
+triviaPrize: 10
+premiumPrize: 20
+keyCost: 7500
+keyRole: "388035897414778893"
+keyChannel: "412714855812825091"
+banChannel: "470691521922859018"
+concoursChannel: "479389044841775130"
+
+punishments:
+  pub:
+    timeout: 1209600
+    reason: "Publicité sauvage"
+
+betLimits:
+  maxi: 1000
+  mini: 10
+
+betReward:
+  banqueroute:
+    chances: 60
+    reward: 0
+  gainPasBon:
+    chances: 30
+    reward: 0.5
+  gainNul:
+    chances: 10
+    reward: 1
+  gain2:
+    chances: 15
+    reward: 2
+  gain3:
+    chances: 10
+    reward: 3
+  gain5:
+    chances: 5
+    reward: 5
+
+triviaStats:
+  winSwitch: 5
+  messageSwitch: 1
+  threadTimer: 2
+
+database:
+  url: "databaseURL"
+  username: "databaseUser"
+  password: "databasePassword"
+
+liens:
+  Youtube: https://www.youtube.com/user/Slashouts
+  Site des clés: http://keys.danfield.fr
+  FAQ: http://keys.danfield.fr/FAQ.php
+  Groupe Steam: http://steamcommunity.com/groups/Danfield
+  Twitch: https://www.twitch.tv/danfieldyt
+  Facebook: https://www.facebook.com/DanFieldYT
+  Twitter: https://twitter.com/DanField_YT
+  Discord: https://discord.gg/danfield
+
+groups:
+  moderateur:
+    id: "388036027253784577"
+    rank: "1"
+    logPrefix: "mod"
+    inheritance: "animateur"
+  admin:
+    id: "388035897414778893"
+    rank: "2"
+    logPrefix: "adm"
+    inheritance: "moderateur"
+  leGrandRenard:
+    id: "388036313531809792"
+    rank: "3"
+    logPrefix: "dan"
+    inheritance: "admin"
+  puni:
+    id: "390239185879040001"
+    rank: "0"
+    logPrefix: "plot"
+  animateur:
+    id: "468796804138401792"
+    rank: "0"
+    logPrefix: "anim"
+    inheritance: "default"
+
+permissions:
+  animateur:
+    - fun
+    - removeError
+    - bypassantiad
+  default:
+    - base
+  moderateur:
+    - mod
+    - warn
+    - ban
+    - trivia
+    - role
+    - web
+    - lotery
+    - money
+  admin:
+    - "*"
